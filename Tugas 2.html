@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA ENTRY</title>
+    <style>
+        body {
+            background-size: cover;
+            color: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #020202;
+        }
+
+        form {
+            max-width: 700px;
+            margin: auto;
+            background: rgba(5, 119, 250, 0.658);
+            padding: 90px;
+            border-radius: 20px;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #00f704;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        button[type="reset"] {
+            background-color: #f74e00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Entry</h1>
+    <form>
+        <ol>
+            <li>
+                Nama : <input type="text" name="nama">
+            </li>
+            <li>
+                NRP : <input type="text" name="nrp">
+            </li>
+            <li>
+                Kelas : <input type="text" name="kelas">
+            </li>
+            <li>
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin">
+            <option value="pria">Pria</option>
+            <option value="wanita">Wanita</option>
+        </select>
+            </li>
+            <li>
+        <label for="agama">Agama:</label>
+        <select id="agama" name="agama">
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="hindu">Hindu</option>
+            <option value="budha">Budha</option>
+            <option value="lainnya">Lainnya</option>
+        </select>
+            </li>
+            <li>
+        <label for="ttl">Tempat/Tanggal Lahir:</label>
+        <input type="text" id="ttl" name="ttl">
+            </li>
+            <li>
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat"></textarea>
+            </li>
+            <li>
+        <label for="riwayat_pendidikan">Riwayat Pendidikan:</label>
+        <ul>
+            <li>SD : <input type="text" name="sd"></li>
+            <li>SMP : <input type="text" name="smp"></li>
+            <li>SMA : <input type="text" name="sma"></li>
+        </ul>
+            </li>
+            <li>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+            </li>
+            <li>
+        <label for="homepage">Homepage:</label>
+        <input type="text" id="homepage" name="homepage">
+            </li>
+            <li>
+        <label for="hobby">Hobby:</label>
+        <input type="text" id="hobby" name="hobby">
+            </li>
+        <li>
+            Interest :
+            <input type="checkbox" name="interest" value="Komputer"> Komputer
+            <input type="checkbox" name="interest" value="Sport"> Sport
+            <input type="checkbox" name="interest" value="Travelling"> Travelling
+            <input type="checkbox" name="interest" value="Writing"> Writing
+            <input type="checkbox" name="interest" value="Reading"> Reading
+        </li>
+        <button type="submit">Simpan</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
